@@ -63,14 +63,14 @@ RUN --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
     --mount=type=cache,target=/var/cache/apt,sharing=locked \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-    python3.11 \
+    python3.10 \
     python3-pip
 
 # コマンドの改名
 RUN --mount=type=cache,target=/var/lib/apt/lists,sharing=locked \
     --mount=type=cache,target=/var/cache/apt,sharing=locked \
-    update-alternatives --install /usr/bin/python python /usr/bin/python3.11 30 \
-    && update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 30
+    update-alternatives --install /usr/bin/python python /usr/bin/python3.10 30 \
+    && update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 30 \
 
 # online-judge-tools
 
