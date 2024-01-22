@@ -1,10 +1,24 @@
 # Atcoder Container
+## setup
+```
+$ sh startup.sh
+```
 
-acc login
+```
+$ acc new abc250
+```
 
-acc config default-task-choice all
+```
+$ cd abc250/a
+```
 
-acc config default-template python
+## test
+```
+$ oj t -c "python main.py"
+```
 
-oj login https://beta.atcoder.jp/
-
+## submit
+```
+$ acc submit main.py -- -l 5055
+$ abca
+```
